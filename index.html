@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-aside">
+            <div class="title">
+            <p>Баланс</p>
+            <input type="text" id="bank" disabled>
+            </div>
+            <div class="title">
+            <p>Пиво</p>
+            <input type="text" id="storage" disabled>
+            </div>
+            <div class="title">
+            <p>Вино</p>
+            <input type="text" id="storageVine" disabled>
+            </div>
+            <div class="title">
+            <p>Пепсі</p>
+            <input type="text" id="storagePepsi" disabled>
+            </div>
+        </div>
+        <div class="center">
+            <div class="title">
+            <p>Кількість</p>
+            <input type="text" id="count" placeholder="write count">
+             </div>
+            <div class="title">
+                <form name="drinks" class="drinks">
+                    <label for="beer">
+                    <input type="radio" name="drinks" id="beer" value="beer" checked>Пиво
+                    </label>
+                    <label for="vine">
+                    <input type="radio" name="drinks" id="vine" value="vine" >Вино
+                    </label>
+                    <label for="pepsi">
+                    <input type="radio" id="pepsi" name="drinks" value="pepsi" >Пепсі
+                    </label>
+                </form>
+            </div>
+            <input type="button" value="add" id="btnAdd" class="Add"> 
+            <div class= "order"></div>
+            <input type="button" value="buy" id="btnBUY" class="Buy"> 
+        </div>
+        <div class="right-aside">
+        </div>
+        </div>
+        
+    </div>
+
+    <script src="shop.js" type="module" "></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
